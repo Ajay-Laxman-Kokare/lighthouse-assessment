@@ -99,7 +99,7 @@ public class Controller {
 
     private RateLimiterConfig createRateLimiterConfig() {
         return RateLimiterConfig.custom()
-            .limitForPeriod(300)
+            .limitForPeriod(3)
             .limitRefreshPeriod(Duration.ofHours(1))
             .timeoutDuration(Duration.ZERO)
             .build();
